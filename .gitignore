@@ -5,6 +5,9 @@ target/
 !**/src/test/**
 release.properties
 
+### Mac OSX ###
+.DS_Store
+
 ### STS ###
 .apt_generated
 .classpath
