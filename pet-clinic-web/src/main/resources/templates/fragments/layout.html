@@ -1,5 +1,5 @@
 <!doctype html>
-<html th:fragment="layout (template, menu)">
+<html xmlns:th="http://www.thymeleaf.org" th:fragment="layout (template, menu)">
 
 <head>
 
@@ -80,8 +80,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
+                    <!-- In Spring Boot 2.1 the static folder is considered the root path to the resource -->
                     <img src="../static/resources/images/spring-pivotal-logo.png"
-                         th:src="@{/resources/images/spring-pivotal-logo.png}"
+                         th:src="@{/images/spring-pivotal-logo.png}"
                          alt="Sponsored by Pivotal"/></div>
             </div>
         </div>
