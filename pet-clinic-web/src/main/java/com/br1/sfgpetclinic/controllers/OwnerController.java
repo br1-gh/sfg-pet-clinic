@@ -22,7 +22,7 @@ public class OwnerController {
     }
 
     @RequestMapping("/find")
-    public String oupsHandler() {
+    public String findHandler() {
         return "notimplemented";
     }
 
