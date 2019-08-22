@@ -19,7 +19,11 @@
     <description>SFG Pet Clinic Project</description>
 
     <properties>
-        <java.version>1.8</java.version>
+        <projet.build.sourceEncoding>UTF-8</projet.build.sourceEncoding>
+        <project.reporting.outputEnconding>UTF-8</project.reporting.outputEnconding>
+        <java.version>12</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
     </properties>
 
     <build>
@@ -35,6 +39,11 @@
                     <goals>install</goals>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                 </configuration>
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M3</version>
             </plugin>
         </plugins>
     </build>
